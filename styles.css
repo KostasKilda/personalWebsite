@@ -1,9 +1,3 @@
-/* #changing-text {
-    color: #FBCB0A;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-} */
-
 .font {
     color: #FBCB0A;
     font-family: 'Roboto', sans-serif;
@@ -11,60 +5,32 @@
     font-size: 2em;
 }
 
-body,
-.navbar,
-ul {
+body, .navbar, ul {
     margin: 0;
     padding: 0;
 }
 
-body {
-    /* background-color: #590696; */
-
+#changing-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color:blueviolet;
 }
 
-
-
+a {
+    text-decoration: none;
+}
 
 /* Navigation bar styles */
+/* 1. Static navbar styles */
+/* 2. Styles that change with media query*/
+/* 3. JavaScript styles */
 
-.navbar {
-    background-color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    min-height: 50px;
-}
-
-.navbar-display {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-}
+/* 1. Static navbar styles */
 
 .navbar-hamburger {
     width: 40px;
     height: 40px;
     margin: 5px 15px 5px 5px;
-}
-
-.navbar-hidden-mobile {
-    height: 0px;
-    transition: 0.5s;
-}
-
-.navbar-links-toggle{
-    height: 120px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.navbar-links {
-    height: 120px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
 }
 
 nav div ul {
@@ -77,11 +43,51 @@ nav div ul li {
     text-align: right;
 }
 
-.navbar-anchor {
-    display: inline-block;
-    transform: translateX(-100vw);
+.navbar-logo-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
+.navbar-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 5px 5px 5px 15px;
+}
+
+
+/* 2. Styles that change with media query */
+
+.navbar {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    min-height: 50px;
+}
+
+.navbar-logo{
+    width: 30px;
+    height: 30px;
+    margin: 0 0 5px 0;
+}
+
+.navbar-logo-text{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 0 15px;
+    color: black;
+    font-weight: 400;
+    font-size: 0.7em;
+}
+
+.navbar-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
 
 nav div ul li a {
     font-family: 'Noto Sans', sans-serif;
@@ -92,18 +98,53 @@ nav div ul li a {
 }
 
 
+/* 3. JavaScript styles */
+
+.navbar-hidden-mobile {
+    height: 0px;
+    transition: 0.5s;
+}
+
+.navbar-links-toggle {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.navbar-anchor {
+    display: inline-block;
+    transform: translateX(-100vw);
+}
 
 
 
 @media(min-width: 896px) {
 
     /* Navigation bar styles */
-    .navbar {
-        flex-direction: row;
+    /* 1. Style changes */
+    /* 2. Defaulting JavaScipt */
+
+    /* 1. Style changes */
+
+    .navbar-logo{
+        width: 35px;
+        height: 35px;
     }
 
-    .navbar-display {
-        width: 40%;
+    .navbar-logo-text{
+        font-size: 0.9em;
+    }
+
+    nav div ul li a {
+        font-size: 1.4em;
+    }
+
+    /* 2. Defaulting JavaScipt/Mobile transition to desktop */
+
+    .navbar {
+        flex-direction: row;
+        align-items: center;
     }
 
     nav div ul {
@@ -115,23 +156,26 @@ nav div ul li a {
         display: none;
     }
 
+    .navbar-display {
+        width: 40%;
+    }
+
     .navbar-anchor {
         transform: translateX(0);
         display: inline-block;
-        transform:'translateY(0)';
-        transition:'0s';
+        transform: 'translateY(0)';
+        transition: '0s';
     }
 
     .navbar-hidden-mobile {
         width: 60%;
-        min-height: 50px;
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: flex-end;
     }
 
     .navbar-links {
-        height: 40px;
         margin: 5px 15px;
         flex-direction: row;
         justify-content: flex-end;
@@ -141,24 +185,22 @@ nav div ul li a {
     .navbar-links:last-of-type {
         margin: 5px 40px 5px 15px;
     }
-
-    nav div ul li a {
-        font-size: 1.4em;
-    }
-
 }
 
+
 @media(min-width: 1260px) {
-    .navbar, .navbar-hidden-mobile{
-        min-height: 70px;
+
+    /* Navigation bar changes */
+    .navbar-logo{
+        width: 40px;
+        height: 40px;
     }
 
-    .navbar-links {
-        height: 56px;
+    .navbar-logo-text{
+        font-size: 1em;
     }
-
 
     nav div ul li a {
-        font-size: 1.6em;
+        font-size: 1.5em;
     }
 }
