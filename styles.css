@@ -26,7 +26,6 @@ a {
 /* 1. Static navbar styles */
 /* 2. Styles that change with media query*/
 /* 3. JavaScript styles */
-/* 4. Navigation bar hover effect */
 
 /* 1. Static navbar styles */
 
@@ -88,8 +87,6 @@ nav div ul li {
 
 .navbar-logo-text:hover {
     font-weight: 500;
-    font-size: 0.8em;
-    color: #590696;
 }
 
 .navbar-links {
@@ -115,7 +112,7 @@ nav div ul li a {
 }
 
 .navbar-links-toggle {
-    height: 120px;
+    height: 130px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -127,45 +124,6 @@ nav div ul li a {
 }
 
 
-/* 4. Navigation bar hover effect */
-#hover {
-    display: inline-block;
-    width: auto;
-}
-
-#hover::after {
-    opacity: 1;
-    transform: scale(0);
-    transform-origin: center;
-}
-
-#hover:hover::after,
-#hover:focus::after {
-    transform: scale(1);
-}
-
-.navbar-hover {
-    display: block;
-    position: relative;
-    padding: 0.1em 0;
-}
-
-.navbar-hover::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0.1em;
-    background-color: orangered;
-    opacity: 0;
-    transition: opacity 300ms, transform 300ms;
-}
-
-.navbar-hover:hover::after,
-.navbar-hover:focus::after {
-    opacity: 1;
-}
 
 
 
@@ -174,6 +132,7 @@ nav div ul li a {
     /* Navigation bar styles */
     /* 1. Style changes */
     /* 2. Defaulting JavaScipt */
+    /* 3. Navigation bar hover effect */
 
     /* 1. Style changes */
 
@@ -184,11 +143,6 @@ nav div ul li a {
 
     .navbar-logo-text {
         font-size: 0.9em;
-    }
-
-    .navbar-logo-text:hover {
-        font-weight: 500;
-        font-size: 1em;
     }
 
     nav div ul li a {
@@ -240,10 +194,50 @@ nav div ul li a {
     .navbar-links:last-of-type {
         margin: 5px 40px 5px 15px;
     }
+
+    /* 3. Navigation bar hover effect */
+    #hover {
+        display: inline-block;
+        width: auto;
+    }
+
+    #hover::after {
+        opacity: 1;
+        transform: scale(0);
+        transform-origin: center;
+    }
+
+    #hover:hover::after,
+    #hover:focus::after {
+        transform: scale(1);
+    }
+
+    .navbar-hover {
+        display: block;
+        position: relative;
+        padding: 0.1em 0;
+    }
+
+    .navbar-hover::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0.1em;
+        background-color: orangered;
+        opacity: 0;
+        transition: opacity 300ms, transform 300ms;
+    }
+
+    .navbar-hover:hover::after,
+    .navbar-hover:focus::after {
+        opacity: 1;
+    }
 }
 
 
-@media(min-width: 1260px) {
+@media(min-width: 1280px) {
 
     /* Navigation bar changes */
     .navbar-logo {
@@ -255,14 +249,17 @@ nav div ul li a {
         font-size: 1em;
     }
 
-    .navbar-logo-text:hover {
-        font-weight: 500;
-        font-size: 1.1em;
-    }
-
     nav div ul li a {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 }
 
+@media(min-width: 1280px){
+    nav div ul li a {
+        font-size: 1.6em;
+    }
 
+    .navbar-hover::after{
+        height: 0.08em;
+    }
+}
