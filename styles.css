@@ -1,4 +1,164 @@
-#changing-text{
-    /* transition: opacity 1s; */
-    transition: all 1s;
+/* #changing-text {
+    color: #FBCB0A;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+} */
+
+.font {
+    color: #FBCB0A;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+}
+
+body,
+.navbar,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-color: #590696; */
+
+}
+
+
+
+
+/* Navigation bar styles */
+
+.navbar {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    min-height: 50px;
+}
+
+.navbar-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.navbar-hamburger {
+    width: 40px;
+    height: 40px;
+    margin: 5px 15px 5px 5px;
+}
+
+.navbar-hidden-mobile {
+    height: 0px;
+    transition: 0.5s;
+}
+
+.navbar-links-toggle{
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.navbar-links {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+nav div ul {
+    display: inline-block;
+}
+
+nav div ul li {
+    list-style-type: none;
+    margin: 10px 22px;
+    text-align: right;
+}
+
+.navbar-anchor {
+    display: inline-block;
+    transform: translateX(-100vw);
+}
+
+
+nav div ul li a {
+    font-family: 'Noto Sans', sans-serif;
+    color: black;
+    font-weight: 400;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+
+
+
+
+@media(min-width: 896px) {
+
+    /* Navigation bar styles */
+    .navbar {
+        flex-direction: row;
+    }
+
+    .navbar-display {
+        width: 40%;
+    }
+
+    nav div ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navbar-hamburger {
+        display: none;
+    }
+
+    .navbar-anchor {
+        transform: translateX(0);
+        display: inline-block;
+        transform:'translateY(0)';
+        transition:'0s';
+    }
+
+    .navbar-hidden-mobile {
+        width: 60%;
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .navbar-links {
+        height: 40px;
+        margin: 5px 15px;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .navbar-links:last-of-type {
+        margin: 5px 40px 5px 15px;
+    }
+
+    nav div ul li a {
+        font-size: 1.4em;
+    }
+
+}
+
+@media(min-width: 1260px) {
+    .navbar, .navbar-hidden-mobile{
+        min-height: 70px;
+    }
+
+    .navbar-links {
+        height: 56px;
+    }
+
+
+    nav div ul li a {
+        font-size: 1.6em;
+    }
 }
