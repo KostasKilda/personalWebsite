@@ -116,9 +116,9 @@ window.addEventListener("load", function () {
 
 window.onresize = function () {
     if (window.innerWidth >= 896) {
-        if(navbarListMobile.classList[1]=='navbar-links-toggle'){
+        if (navbarListMobile.classList[1] == 'navbar-links-toggle') {
             navbarListMobile.classList.toggle('navbar-links-toggle');
-            mobileMenu =0;
+            mobileMenu = 0;
         }
         for (let i = 0; i < navbarAnchor.length; i++) {
             navbarAnchor[i].style.display = 'inline-block';
