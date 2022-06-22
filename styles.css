@@ -1,21 +1,9 @@
-.font {
-    color: #FBCB0A;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 2em;
-}
 
 body,
 .navbar,
 ul {
     margin: 0;
     padding: 0;
-}
-
-#changing-text {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    color: blueviolet;
 }
 
 a {
@@ -26,6 +14,7 @@ a {
 /* 1. Static navbar styles */
 /* 2. Styles that change with media query*/
 /* 3. JavaScript styles */
+/* 4. The main body */
 
 /* 1. Static navbar styles */
 
@@ -112,7 +101,7 @@ nav div ul li a {
 }
 
 .navbar-links-toggle {
-    height: 130px;
+    height: 121px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -124,6 +113,69 @@ nav div ul li a {
 }
 
 
+/* 4. The main body */
+
+#main-header{
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    color: black;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 20vh 0.25em 30vh 0.25em;
+    transition: color 5s;
+}
+
+.main-body{
+   background-image: url(https://cdn.wallpapersafari.com/69/76/YGTcP9.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+}
+
+.personal-image-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.personal-image{
+    border-radius: 50%;
+    transform: translate(0,-75px);
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+}
+
+.pre-changing-text{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.6em;
+    margin: 0% 10% 5% 10%;
+}
+
+
+/* JS font styles for changing text */
+#changing-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: lightblue;
+}
+
+
+.current-work-heading{
+    margin: 2em 0.6em;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 2.2em;
+}
+
 
 
 
@@ -133,6 +185,7 @@ nav div ul li a {
     /* 1. Style changes */
     /* 2. Defaulting JavaScipt */
     /* 3. Navigation bar hover effect */
+    /* 4. The main body */
 
     /* 1. Style changes */
 
@@ -234,10 +287,20 @@ nav div ul li a {
     .navbar-hover:focus::after {
         opacity: 1;
     }
+
+    /* 4. The main body */
+    #main-header{
+        font-size: 4em;
+    }
+
+    .personal-image-wrapper{
+        justify-content: flex-start;
+        margin-left: 10vw;
+    }
 }
 
 
-@media(min-width: 1280px) {
+@media(min-width: 1279px) {
 
     /* Navigation bar changes */
     .navbar-logo {
@@ -252,9 +315,28 @@ nav div ul li a {
     nav div ul li a {
         font-size: 1.4em;
     }
+
+    #main-header{
+        margin: 25vh 0.25em 35vh 0.25em;
+        font-size: 5em;
+    }
+
+    .personal-image{
+        transform: translate(0,-100px);
+        width: 200px;
+        height: 200px;
+    }
+
+    .pre-changing-text{
+        font-size: 2em;
+    }
+
+    .current-work-heading{
+        font-size: 2.6em;
+    }
 }
 
-@media(min-width: 1280px){
+@media(min-width: 1919px){
     nav div ul li a {
         font-size: 1.6em;
     }
@@ -262,4 +344,23 @@ nav div ul li a {
     .navbar-hover::after{
         height: 0.08em;
     }
+
+    #main-header{
+        font-size: 6em;
+    }
+
+    .personal-image{
+        transform: translate(0,-125px);
+        width: 250px;
+        height: 250px;
+    }
+
+    .pre-changing-text{
+        font-size: 2.4em;
+    }
+
+    .current-work-heading{
+        font-size: 3em;
+    }
 }
+
