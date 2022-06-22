@@ -1,7 +1,7 @@
-
 body,
 .navbar,
-ul {
+ul,
+h1 {
     margin: 0;
     padding: 0;
 }
@@ -14,7 +14,6 @@ a {
 /* 1. Static navbar styles */
 /* 2. Styles that change with media query*/
 /* 3. JavaScript styles */
-/* 4. The main body */
 
 /* 1. Static navbar styles */
 
@@ -113,44 +112,48 @@ nav div ul li a {
 }
 
 
-/* 4. The main body */
+/* The main body */
 
-#main-header{
+#main-header {
     display: flex;
     justify-content: center;
     font-size: 3em;
     color: black;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    margin: 20vh 0.25em 30vh 0.25em;
+    padding: 20vh 0.25em 30vh 0.25em;
+    background-image: url(images/clouds.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     transition: color 5s;
 }
 
-.main-body{
-   background-image: url(https://cdn.wallpapersafari.com/69/76/YGTcP9.jpg);
-   background-repeat: no-repeat;
-   background-size: cover;
+.main-body {
+    background-image: url(images/main-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.intro{
+.intro {
     display: flex;
     flex-direction: column;
 }
 
-.personal-image-wrapper{
+.personal-image-wrapper {
     display: flex;
     justify-content: center;
 }
 
-.personal-image{
+.personal-image {
     border-radius: 50%;
-    transform: translate(0,-75px);
+    transform: translate(0, -75px);
     border: 1px solid black;
     width: 150px;
     height: 150px;
 }
 
-.pre-changing-text{
+.pre-changing-text {
+    transform: translate(0, -50px);
     color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -167,13 +170,49 @@ nav div ul li a {
 }
 
 
-.current-work-heading{
+.current-work-heading {
     margin: 2em 0.6em;
     text-align: center;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 2.2em;
+}
+
+
+
+.work-layout-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work-layout-project {
+    background-color: black;
+    padding: 10px;
+    border: solid teal 3px;
+    width: 50%;
+    max-width: 400px;
+    min-width: 200px;
+    margin: 2vh 10%;
+}
+
+.work-layout-project-images {
+    width: 100%;
+    height: auto;
+}
+
+.work-layout-project-image2 {
+    transform: translateY(-5px);
+}
+
+.work-layout-project-header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 20px 0;
+    text-align: center;
+    color: lightblue;
+    font-size: 2em;
 }
 
 
@@ -288,19 +327,38 @@ nav div ul li a {
         opacity: 1;
     }
 
-    /* 4. The main body */
-    #main-header{
+    /* The main body */
+    #main-header {
         font-size: 4em;
     }
 
-    .personal-image-wrapper{
+    .personal-image-wrapper {
         justify-content: flex-start;
         margin-left: 10vw;
+    }
+
+
+    /* Personal projects */
+
+    .work-layout-project {
+        width: 35%;
+        max-width: 420px;
+        min-width: 300px;
+        margin: 5vh 5%;
+    }
+
+    .work-layout-wrapper {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .work-layout-project-header {
+        font-size: 2.4em;
     }
 }
 
 
-@media(min-width: 1279px) {
+@media(min-width: 1280px) {
 
     /* Navigation bar changes */
     .navbar-logo {
@@ -316,51 +374,68 @@ nav div ul li a {
         font-size: 1.4em;
     }
 
-    #main-header{
-        margin: 25vh 0.25em 35vh 0.25em;
+    #main-header {
+        /* margin: 25vh 0.25em 35vh 0.25em; */
         font-size: 5em;
     }
 
-    .personal-image{
-        transform: translate(0,-100px);
+    .personal-image {
+        transform: translate(0, -100px);
         width: 200px;
         height: 200px;
     }
 
-    .pre-changing-text{
+    .pre-changing-text {
         font-size: 2em;
     }
 
-    .current-work-heading{
+    .current-work-heading {
+        font-size: 2.8em;
+    }
+
+    .work-layout-project {
+        max-width: 600px;
+        min-width: 420px;
+    }
+
+    .work-layout-project-header {
         font-size: 2.6em;
     }
 }
 
-@media(min-width: 1919px){
+@media(min-width: 1920px) {
     nav div ul li a {
         font-size: 1.6em;
     }
 
-    .navbar-hover::after{
+    .navbar-hover::after {
         height: 0.08em;
     }
 
-    #main-header{
+    #main-header {
         font-size: 6em;
     }
 
-    .personal-image{
-        transform: translate(0,-125px);
+    .personal-image {
+        transform: translate(0, -125px);
         width: 250px;
         height: 250px;
     }
 
-    .pre-changing-text{
+    .pre-changing-text {
         font-size: 2.4em;
     }
 
-    .current-work-heading{
+    .current-work-heading {
+        font-size: 3.4em;
+    }
+
+    .work-layout-project {
+        max-width: 600px;
+        min-width: 500px;
+    }
+
+    .work-layout-project-header {
         font-size: 3em;
     }
 }
-
