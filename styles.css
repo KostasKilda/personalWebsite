@@ -114,18 +114,29 @@ nav div ul li a {
 
 /* The main body */
 
-#main-header {
-    display: flex;
-    justify-content: center;
-    font-size: 3em;
-    color: black;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    padding: 15vh 0.25em 25vh 0.25em;
-    background-image: url(images/clouds.png);
+.nothingness{
+    padding: 150px 0;
+    background-image: url(images/clouds.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    transition: color 5s;
+}
+
+#main-header {
+    margin: 0 5vw;
+    text-align: left;
+    padding: 15vh 0.25em 25vh 0.25em;
+}
+
+#main-header > h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 2.6em;
+}
+
+#main-header > h1:last-child{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 2em;
 }
 
 .main-body {
@@ -190,7 +201,7 @@ nav div ul li a {
 .work-layout-project {
     background-color:black;
     padding: 10px 20px;
-    border: solid gray 1px;
+    border: solid teal 2px;
     width: 50%;
     max-width: 400px;
     min-width: 200px;
@@ -356,9 +367,21 @@ nav div ul li a {
     }
 
     /* The main body */
-    #main-header {
-        font-size: 4em;
-        padding: 20vh 0.25em 30vh 0.25em;
+    .nothingness{
+        padding: 200px 0;
+    }
+
+    #main-header{
+        padding: 15vh 0.25em 25vh 0.25em;
+        margin: 0 0 0 25vw;
+    }
+
+    #main-header > h1{
+        font-size: 3.2em;
+    }
+
+    #main-header > h1:last-child{
+        font-size: 2.6em;
     }
 
     .personal-image-wrapper {
@@ -368,6 +391,8 @@ nav div ul li a {
 
 
     /* Personal projects */
+
+    
 
     .work-layout-project {
         width: 35%;
@@ -403,9 +428,16 @@ nav div ul li a {
         font-size: 1.4em;
     }
 
-    #main-header {
-        /* margin: 25vh 0.25em 35vh 0.25em; */
-        font-size: 5em;
+    .nothingness{
+        padding: 250px 0;
+    }
+
+    #main-header > h1{
+        font-size: 3.8em;
+    }
+
+    #main-header > h1:last-child{
+        font-size: 3.2em;
     }
 
     .personal-image {
@@ -445,8 +477,16 @@ nav div ul li a {
         height: 0.08em;
     }
 
-    #main-header {
-        font-size: 6em;
+    .nothingness{
+        padding: 300px 0;
+    }
+
+    #main-header > h1{
+        font-size: 4.6em;
+    }
+
+    #main-header > h1:last-child{
+        font-size: 4em;
     }
 
     .personal-image {
