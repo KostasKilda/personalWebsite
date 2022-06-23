@@ -124,7 +124,7 @@ nav div ul li a {
 #main-header {
     margin: 0 5vw;
     text-align: left;
-    padding: 15vh 0.25em 25vh 0.25em;
+    padding: 10vh 0.25em 20vh 0.25em;
 }
 
 #main-header > h1{
@@ -182,7 +182,7 @@ nav div ul li a {
 
 
 .current-work-heading {
-    margin: 2em 0.6em;
+    margin: 0em 0.6em 0.8em 0.6em;
     text-align: center;
     color: white;
     font-family: 'Roboto', sans-serif;
@@ -251,11 +251,29 @@ nav div ul li a {
     color: aquamarine;
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
-    font-size: 1em;
+    font-size: 0.8em;
     text-decoration: underline;
     margin: 10px;
 }
 
+/* Contacts section */
+.contacts{
+    color: white;
+    background-color: black;
+    padding: 40px;
+}
+
+.contacts-text{
+    margin-top: 4px;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+.contacts-text > span{
+    margin-left: 2px;
+    font-weight: 400;
+}
 
 @media(min-width: 896px) {
 
@@ -392,8 +410,6 @@ nav div ul li a {
 
     /* Personal projects */
 
-    
-
     .work-layout-project {
         width: 35%;
         max-width: 420px;
@@ -409,6 +425,13 @@ nav div ul li a {
     .work-layout-project-header {
         font-size: 2.4em;
     }
+
+
+    /* Contact me */
+    .contacts{
+        padding: 40px 40px 20px 40px;
+    }
+
 }
 
 
@@ -465,6 +488,10 @@ nav div ul li a {
 
     .work-layout-project-skills span, .work-layout-project-link a{
         font-size: 1.2em;
+    }
+
+    .contacts{
+        padding: 50px 50px 30px 50px;
     }
 }
 
