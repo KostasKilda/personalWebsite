@@ -121,7 +121,7 @@ nav div ul li a {
     color: black;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    padding: 20vh 0.25em 30vh 0.25em;
+    padding: 15vh 0.25em 25vh 0.25em;
     background-image: url(images/clouds.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -188,9 +188,9 @@ nav div ul li a {
 }
 
 .work-layout-project {
-    background-color: black;
-    padding: 10px;
-    border: solid teal 3px;
+    background-color:black;
+    padding: 10px 20px;
+    border: solid gray 1px;
     width: 50%;
     max-width: 400px;
     min-width: 200px;
@@ -215,7 +215,35 @@ nav div ul li a {
     font-size: 2em;
 }
 
+.work-layout-project-skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    color: aquamarine;
+    margin: 20px 10px;
+}
 
+.work-layout-project-skills span{
+    margin: 5px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.work-layout-project-link{
+    display: flex;
+    justify-content: center;
+}
+
+.work-layout-project-link a{
+    color: aquamarine;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 1em;
+    text-decoration: underline;
+    margin: 10px;
+}
 
 
 @media(min-width: 896px) {
@@ -330,6 +358,7 @@ nav div ul li a {
     /* The main body */
     #main-header {
         font-size: 4em;
+        padding: 20vh 0.25em 30vh 0.25em;
     }
 
     .personal-image-wrapper {
@@ -401,6 +430,10 @@ nav div ul li a {
     .work-layout-project-header {
         font-size: 2.6em;
     }
+
+    .work-layout-project-skills span, .work-layout-project-link a{
+        font-size: 1.2em;
+    }
 }
 
 @media(min-width: 1920px) {
@@ -437,5 +470,9 @@ nav div ul li a {
 
     .work-layout-project-header {
         font-size: 3em;
+    }
+
+    .work-layout-project-skills span, .work-layout-project-link a{
+        font-size: 1.4em;
     }
 }
