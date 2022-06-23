@@ -1,5 +1,5 @@
 const textChange = document.querySelector('#changing-text');
-const phrases = ['creating websites', 'writting custom scripts', 'fresh air', 'video games', 'learning',];
+const phrases = ['creating websites', 'writting custom scripts', 'fresh air', 'video games', 'studying',];
 const colours = ['blue', 'orange', 'green', '#0abab5', 'black'];
 
 
@@ -134,16 +134,3 @@ window.onresize = function () {
         }
     }
 }
-
-
-
-
-const mainHeader = document.querySelector('#main-header')
-let colorSwap = 0;
-setInterval(function(){
-    if(colorSwap==colours.length){
-        colorSwap=0;
-    }
-    mainHeader.style.color = colours[colorSwap];
-    colorSwap++;
-},5000)
