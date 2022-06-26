@@ -285,6 +285,7 @@ nav div ul li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 5px 0 30px 0 ;
 }
 
 .carousel-outside{
@@ -487,6 +488,10 @@ nav div ul li a {
         padding: 40px 40px 20px 40px;
     }
 
+    .carousel-outside-wrapper{
+        padding: 5px 0 40px 0 ;
+    }
+
     .carousel-outside{
         width: 80%;
     }
@@ -498,10 +503,6 @@ nav div ul li a {
     
     .carousel-inside{
         width: 40%;
-    }
-
-    .carousel-inside > img{
-
     }
 
 }
@@ -572,6 +573,10 @@ nav div ul li a {
 
     .carousel-inside-wrapper{
         justify-content: space-around;
+    }
+
+    .carousel-outside-wrapper{
+        padding: 10px 0 60px 0 ;
     }
 }
 
