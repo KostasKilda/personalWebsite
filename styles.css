@@ -169,7 +169,7 @@ nav div ul li a {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 1.6em;
-    margin: 0% 10% 5% 10%;
+    margin: 0% 9% 5% 9%;
 }
 
 
@@ -274,6 +274,58 @@ nav div ul li a {
     margin-left: 2px;
     font-weight: 400;
 }
+
+/* Carousel classes */
+.current-skills-heading{
+    margin: 80px 20px 10px 20px;
+}
+
+.carousel-outside-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-outside{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.carousel-inside-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.carousel-inside{
+    margin: 60px 0 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-inside > img {
+    width: 100px;
+    height: 100px;
+}
+
+.carousel-text{
+    text-align: center;
+    margin: 20px 5% 0 5%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 1.2em;
+    color: white;
+}
+
 
 @media(min-width: 896px) {
 
@@ -427,9 +479,29 @@ nav div ul li a {
     }
 
 
+    /* Experiences secition */
+
+
     /* Contact me */
     .contacts{
         padding: 40px 40px 20px 40px;
+    }
+
+    .carousel-outside{
+        width: 80%;
+    }
+    
+    .carousel-inside-wrapper{
+        width: 80%;
+        flex-direction: row;
+    }
+    
+    .carousel-inside{
+        width: 40%;
+    }
+
+    .carousel-inside > img{
+
     }
 
 }
@@ -492,6 +564,14 @@ nav div ul li a {
 
     .contacts{
         padding: 50px 50px 30px 50px;
+    }
+
+    .carousel-outside{
+        flex-direction: row;
+    }
+
+    .carousel-inside-wrapper{
+        justify-content: space-around;
     }
 }
 
