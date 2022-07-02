@@ -1,7 +1,5 @@
 const textChange = document.querySelector('#changing-text');
 const phrases = ['creating websites', 'writting custom scripts', 'fresh air', 'video games', 'studying',];
-const colours = ['blue', 'orange', 'green', '#0abab5', 'black'];
-
 
 // starts the changing text sequence
 let index = 0;
