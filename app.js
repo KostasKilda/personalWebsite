@@ -2,8 +2,10 @@ const textChange = document.querySelector('#changing-text');
 const phrases = ['creating websites', 'writting custom scripts', 'fresh air', 'video games', 'studying',];
 
 // starts the changing text sequence
-let index = 0;
-waitTimer(index);
+if ((document.URL == 'file:///C:/Users/Marbi/Desktop/Project/personalWebsite/index.html') || (document.URL.includes('index.html')) || (document.URL == 'https://kostaskilda.github.io/personalWebsite/')) {
+    let index = 0;
+    waitTimer(index);
+}
 
 function deleteText(index) {
     let i = textChange.innerText.length;
@@ -70,6 +72,8 @@ function waitTimer(index) {
         i++;
     }, 750)
 }
+
+
 
 
 // Navbar javaScript
