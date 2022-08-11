@@ -101,7 +101,7 @@ nav div ul li a {
 }
 
 .navbar-links-toggle {
-    height: 161px;
+    height: 121px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
