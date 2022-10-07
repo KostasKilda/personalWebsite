@@ -1,7 +1,8 @@
 body,
 .navbar,
 ul,
-h1 {
+h1,
+p {
     margin: 0;
     padding: 0;
 }
@@ -419,7 +420,7 @@ nav div ul li a {
     }
 
     .navbar-display {
-        width: 40%;
+        width: 25%;
     }
 
     .navbar-anchor {
@@ -430,7 +431,7 @@ nav div ul li a {
     }
 
     .navbar-hidden-mobile {
-        width: 60%;
+        width: 75%;
         height: 100%;
         display: flex;
         align-items: center;
