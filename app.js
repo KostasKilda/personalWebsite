@@ -1,5 +1,5 @@
 const textChange = document.querySelector('#changing-text');
-const phrases = ['creating websites', 'writting custom scripts', 'fresh air', 'video games', 'studying',];
+const phrases = ['creating websites', 'writting custom scripts', 'fresh air', 'video games', 'studying'];
 
 // starts the changing text sequence
 let index = 0;
@@ -107,7 +107,6 @@ hamburger.addEventListener('click', function () {
     }
     navbarListMobile.classList.toggle('navbar-links-toggle');
 });
-
 
 window.addEventListener("load", function () {
     window.dispatchEvent(new Event('resize'));
