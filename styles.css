@@ -294,11 +294,12 @@ nav div ul li a {
     align-items: center;
 }
 
-.education-text>h2 {
+.education-text> .uni-name {
     margin: 10px 10px 30px 10px;
     font-family: "Times New Roman";
     text-align: center;
     font-size: 2.6em;
+    font-weight: 600;
 }
 
 .education-text {
@@ -625,7 +626,7 @@ nav div ul li a {
         margin-right: 0px;
     }
 
-    .education-text>h2 {
+    .education-text> .uni-name {
         margin: 10px 20px 40px 20px;
         font-size: 3em;
     }
@@ -727,7 +728,7 @@ nav div ul li a {
         height: 60vh;
     }
 
-    .education-text>h2 {
+    .education-text> .uni-name {
         margin: 10px 10px 30px 10px;
         font-size: 3.8em;
     }
@@ -798,7 +799,7 @@ nav div ul li a {
         height: 80vh;
     }
 
-    .education-text>h2 {
+    .education-text> .uni-name {
         margin: 10px 20px 20px 20px;
         font-size: 4.6em;
     }
