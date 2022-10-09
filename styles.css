@@ -117,12 +117,12 @@ nav div ul li a {
 
 /* The main body */
 
-.nothingness {
+/* .nothingness {
     padding: 150px 0;
     background-image: url(images/clouds.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 #main-header {
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
@@ -326,15 +326,74 @@ nav div ul li a {
 }
 
 /* Contacts section */
-.contacts {
-    color: white;
-    background-color: black;
+
+.carousel-inside {
     position: relative;
-    z-index: 1;
-    padding: 40px;
+    background-color: black;
+    margin: 60px 0 0 0;
+    max-width: 260px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
 }
 
+.carousel-inside:before {
+    width: 50%;
+    height: 200%;
+    background: linear-gradient(#80ff72, #7ee8fa);
+    content: "";
+    position: absolute;
+    animation: borderSpin 5s linear infinite forwards;
+}
+
+.carousel-inside:after {
+    border-radius: 10px;
+    content: "";
+    position: absolute;
+    background-color: #0e1538;
+    inset: 4px;
+}
+
+
+
+
+
+.contacts {
+    color: white;
+    background-color: #090a0f;
+    position: relative;
+    z-index: 0;
+    padding: 40px;
+    height: auto;
+    overflow: hidden;
+}
+
+.contacts:before {
+    width: 150%;
+    height: 150%;
+    background: linear-gradient(#FF44CC, #1F51FF);
+    content: "";
+    position: absolute;
+    right: -25%;
+    animation: contactsBorder 10s linear infinite forwards;
+}
+
+.contacts:after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    inset: 4px 0 0 0;
+}
+
+
 .contacts-text {
+    position: relative;
+    z-index: 1;
     margin-top: 4px;
     font-size: 1em;
     font-family: 'Roboto', sans-serif;
@@ -638,6 +697,10 @@ nav div ul li a {
     .about-uni>p {
         font-size: 1em;
     }
+
+    .contacts:before{
+        height: 200%;
+    }
 }
 
 
@@ -740,6 +803,10 @@ nav div ul li a {
     .about-uni>p {
         font-size: 1.2em;
     }
+
+    .contacts:before{
+        height: 250%;
+    }
 }
 
 @media(min-width: 1920px) {
@@ -803,6 +870,10 @@ nav div ul li a {
         margin: 10px 20px 20px 20px;
         font-size: 4.6em;
     }
+
+    .contacts:before{
+        height: 300%;
+    }
 }
 
 
@@ -822,6 +893,11 @@ nav div ul li a {
     }
 }
 
+@keyframes contactsBorder {
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 #stars {
     z-index: 0;
