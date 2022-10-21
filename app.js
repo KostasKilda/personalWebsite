@@ -1,5 +1,5 @@
 const textChange = document.querySelector('#changing-text');
-const phrases = ['writting custom scripts', 'fresh air', 'video games', 'studying', 'creating websites'];
+const phrases = ['researching latest exploits and viruses', 'creating personal projects', 'enhancing my coding skills', 'getting fresh air', 'programming'];
 
 // starts the changing text sequence
 if ((document.URL == 'file:///C:/Users/Marbi/Desktop/Project/personalWebsite/index.html') || (document.URL.includes('index.html')) || (document.URL == 'https://kostaskilda.github.io/personalWebsite/')) {
