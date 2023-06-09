@@ -135,6 +135,3 @@ window.onresize = function () {
         }
     }
 }
-
-
-
