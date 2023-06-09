@@ -158,7 +158,7 @@ nav div ul li a {
 .my-text {
     color: white;
     text-align: left;
-    padding: 0 20px 20px 20px;
+    padding: 0 20px 50px 20px;
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
 }
@@ -484,7 +484,65 @@ nav div ul li a {
     color: white;
 }
 
+.lastest-project-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 
+.latest-project {
+    width: 80%;
+    margin: 20px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lastest-project-name {
+    font-size: 1.6em;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin: 0 0 10px 0;
+}
+
+.latest-project-description {
+    text-align: left;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin: 0 0 10px 0;
+}
+
+.projectGitLink{
+    width: 100%;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1em;
+    margin: 0 0 10px 0;
+}
+
+.projectGitLink a{
+    word-wrap: break-word;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    color: #03cffc;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.latest-project-img img {
+    width: 100%;
+}
+
+.latest-project-img {
+    width: 100%;
+    margin: 0 0 40px 0;
+    display: flex;
+}
 
 
 
@@ -623,7 +681,7 @@ nav div ul li a {
     }
 
     .my-text {
-        padding: 0 30px;
+        padding: 0 30px 40px;
         position: relative;
         text-align: left;
         font-size: 1.6em;
@@ -698,8 +756,42 @@ nav div ul li a {
         font-size: 1em;
     }
 
-    .contacts:before{
+    .contacts:before {
         height: 200%;
+    }
+
+    .lastest-project-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .latest-project {
+        width: 90%;
+        margin: 0 5%;
+        
+    }
+
+    .lastest-project-name {
+        font-size: 1.6em;
+        margin: 0 0 10px 0;
+    }
+
+    .latest-project-description {
+        margin: 10px 0 40px 0;
+    }
+
+    .projectGitLink{
+        font-size: 1em;
+        margin: 0 0 10px 0;
+    }
+    
+    .projectGitLink a{
+        font-size: 1em;
+    }
+
+    .latest-project-img img {
+        width: 100%;
     }
 }
 
@@ -736,7 +828,7 @@ nav div ul li a {
     }
 
     .my-text {
-        padding: 20px 50px 40px 50px;
+        padding: 20px 50px 60px 50px;
         font-size: 2em;
     }
 
@@ -805,8 +897,37 @@ nav div ul li a {
         font-size: 1.2em;
     }
 
-    .contacts:before{
+    .contacts:before {
         height: 250%;
+    }
+
+    .latest-project {
+        width: 90%;
+        margin: 0 5%;
+        
+    }
+
+    .lastest-project-name {
+        font-size: 1.8em;
+        margin: 0 0 10px 0;
+    }
+
+    .latest-project-description {
+        margin: 10px 0 40px 0;
+        font-size: 1.2em;
+    }
+
+    .projectGitLink{
+        font-size: 1em;
+        margin: 0 0 20px 0;
+    }
+    
+    .projectGitLink a{
+        font-size: 1em;
+    }
+
+    .latest-project-img img {
+        width: 100%;
     }
 }
 
@@ -834,7 +955,7 @@ nav div ul li a {
     }
 
     .my-text {
-        padding: 30px 100px 40px 100px;
+        padding: 30px 100px 100px 100px;
         font-size: 2.2em;
     }
 
@@ -873,7 +994,7 @@ nav div ul li a {
         font-size: 4.6em;
     }
 
-    .contacts:before{
+    .contacts:before {
         height: 300%;
     }
 }
