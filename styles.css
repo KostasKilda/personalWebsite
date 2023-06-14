@@ -103,7 +103,7 @@ nav div ul li a {
 }
 
 .navbar-links-toggle {
-    height: 86px;
+    height: 126px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -116,13 +116,6 @@ nav div ul li a {
 
 
 /* The main body */
-
-/* .nothingness {
-    padding: 150px 0;
-    background-image: url(images/clouds.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
 
 #main-header {
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
@@ -484,7 +477,7 @@ nav div ul li a {
     color: white;
 }
 
-.lastest-project-wrapper {
+.latest-project-wrapper {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -500,7 +493,7 @@ nav div ul li a {
     align-items: center;
 }
 
-.lastest-project-wrapper-inside{
+.latest-project-wrapper-inside{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -515,7 +508,7 @@ nav div ul li a {
     padding: 20px 4%;
 }
 
-.lastest-project-name {
+.latest-project-name {
     font-size: 1.6em;
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
@@ -775,7 +768,7 @@ nav div ul li a {
         height: 200%;
     }
 
-    .lastest-project-wrapper {
+    .latest-project-wrapper {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -787,7 +780,7 @@ nav div ul li a {
         
     }
 
-    .lastest-project-name {
+    .latest-project-name {
         font-size: 1.6em;
         margin: 0 0 10px 0;
     }
@@ -918,7 +911,7 @@ nav div ul li a {
         
     }
 
-    .lastest-project-name {
+    .latest-project-name {
         font-size: 1.8em;
         margin: 0 0 10px 0;
     }
