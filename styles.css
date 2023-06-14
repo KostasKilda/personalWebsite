@@ -500,6 +500,21 @@ nav div ul li a {
     align-items: center;
 }
 
+.lastest-project-wrapper-inside{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 92%;
+
+    background-color: #13151f;
+    top: -8px;
+    position: relative;
+    border-radius: 10px;
+    border: 2px solid #1e2130;
+    padding: 20px 4%;
+}
+
 .lastest-project-name {
     font-size: 1.6em;
     font-weight: 500;
@@ -513,7 +528,7 @@ nav div ul li a {
     font-size: 1em;
     font-family: 'Roboto', sans-serif;
     color: white;
-    margin: 0 0 10px 0;
+    margin: 0 0 20px 0;
 }
 
 .projectGitLink{
@@ -521,8 +536,8 @@ nav div ul li a {
     text-align: left;
     font-family: 'Roboto', sans-serif;
     color: white;
-    font-size: 1em;
-    margin: 0 0 10px 0;
+    font-size: 0.9em;
+    margin: 0 0 5px 0;
 }
 
 .projectGitLink a{
@@ -540,7 +555,7 @@ nav div ul li a {
 
 .latest-project-img {
     width: 100%;
-    margin: 0 0 40px 0;
+    margin: 40px 0 0 0;
     display: flex;
 }
 
@@ -783,11 +798,7 @@ nav div ul li a {
 
     .projectGitLink{
         font-size: 1em;
-        margin: 0 0 10px 0;
-    }
-    
-    .projectGitLink a{
-        font-size: 1em;
+        margin: 0 0 5px 0;
     }
 
     .latest-project-img img {
@@ -918,12 +929,7 @@ nav div ul li a {
     }
 
     .projectGitLink{
-        font-size: 1em;
-        margin: 0 0 20px 0;
-    }
-    
-    .projectGitLink a{
-        font-size: 1em;
+        margin: 0 0 5px 0;
     }
 
     .latest-project-img img {
