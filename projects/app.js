@@ -56,3 +56,22 @@ window.onresize = function () {
         }
     }
 }
+
+
+// Dynamically changes images for a { Video generator } project
+document.addEventListener("DOMContentLoaded", function() {
+    let images = ["../images/videoGenerator/image1.jpg", "../images/videoGenerator/image2.jpg", "../images/videoGenerator/image3.jpg", '../images/videoGenerator/image4.jpg', '../images/videoGenerator/image5.jpg'];
+    let currentIndex = 0;
+    let slider = document.getElementById("videoGenerator");
+
+    function changeImage() {
+        currentIndex++;
+        if (currentIndex >= images.length) {
+            currentIndex = 0;
+        }
+        setTimeout(function() {
+            slider.src = images[currentIndex];
+        }, 500); // Transition timer 0.5s
+    }
+    setInterval(changeImage, 4000);
+});

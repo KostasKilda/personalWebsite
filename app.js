@@ -1,5 +1,5 @@
 const textChange = document.querySelector('#changing-text');
-const phrases = ['researching latest exploits and viruses', 'creating personal projects', 'enhancing my coding skills', 'getting fresh air', 'programming'];
+const phrases = ['researching latest security breaches, exploits and viruses', 'creating personal projects', 'enhancing my coding skills', 'getting fresh air', 'programming'];
 
 // starts the changing text sequence
 if ((document.URL == 'file:///C:/Users/Marbi/Desktop/Project/personalWebsite/index.html') || (document.URL.includes('index.html')) || (document.URL == 'https://kostaskilda.github.io/personalWebsite/')) {
@@ -19,7 +19,7 @@ function deleteText(index) {
             textChange.innerText = textChange.innerText.slice(0, -1);
             i--;
         }
-    }, 100)
+    }, 50)
 }
 
 
@@ -51,7 +51,7 @@ function newTextLine(index) {
             index++;
             waitTimer(index);
         }
-    }, 150)
+    }, 100)
 }
 
 
@@ -135,3 +135,23 @@ window.onresize = function () {
         }
     }
 }
+
+
+
+// Dynamically changes images for a { Video generator } project
+document.addEventListener("DOMContentLoaded", function() {
+    let images = ["images/videoGenerator/image1.jpg", "images/videoGenerator/image2.jpg", "images/videoGenerator/image3.jpg", 'images/videoGenerator/image4.jpg', 'images/videoGenerator/image5.jpg'];
+    let currentIndex = 0;
+    let slider = document.getElementById("videoGenerator");
+
+    function changeImage() {
+        currentIndex++;
+        if (currentIndex >= images.length) {
+            currentIndex = 0;
+        }
+        setTimeout(function() {
+            slider.src = images[currentIndex];
+        }, 500); // Transition timer 0.5s
+    }
+    setInterval(changeImage, 4000);
+});
