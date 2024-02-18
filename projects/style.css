@@ -281,6 +281,10 @@ nav div ul li a {
     color: #03cffc;
 }
 
+#videoGenerator{
+    transition: opacity 0.5s ease;
+}
+
 @media(min-width: 896px) {
 
     /* Navigation bar styles */
@@ -423,7 +427,6 @@ nav div ul li a {
         width: 80%;
         margin: 40px;
     }
-
 }
 
 @media(min-width: 1280px) {
